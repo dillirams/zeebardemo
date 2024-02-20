@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <title>Hotel Booking Form</title>
+</head>
+<body>
+
+    <header>
+        Zeebar Resort
+    </header>
+
+    <h2 class="text-center">Booking Page</h2>
+
+<div class="container">
+    <div class="form-container">
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+           <div class="form-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="roomType">Room Type:</label>
+                <select class="form-control" id="roomType" name="roomType" required>
+                    <option value="single">Single Room</option>
+                    <option value="twin">Twin room</option>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="suite">Suite Room</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numberOfRooms">Number of Rooms:</label>
+                <select class="form-control" id="numberOfRooms" name="numberOfRooms" required>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="arrivalDate">Arrival Date:</label>
+                <input type="date" class="form-control" id="arrivalDate" name="arrivalDate" required>
+            </div>
+            <div class="form-group">
+                <label for="departureDate">Departure Date:</label>
+                <input type="date" class="form-control" id="departureDate" name="departureDate" required>
+            </div>
+            <div class="form-group">
+                <label>Number of Guests:</label>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="maleGuests">Male:</label>
+                        <input type="number" class="form-control" id="maleGuests" name="maleGuests" min="0" value="0">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="femaleGuests">Female:</label>
+                        <input type="number" class="form-control" id="femaleGuests" name="femaleGuests" min="0" value="0">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="childGuests">Child:</label>
+                        <input type="number" class="form-control" id="childGuests" name="childGuests" min="0" value="0">
+                    </div>
+                </div>
+                <p>Total Guests: <span id="totalGuests">0</span></p>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+    
+<footer>
+    <div class="container grid top">
+      <div class="box">
+        <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/000000/external-hotel-hotel-services-and-city-elements-flatart-icons-flat-flatarticons-1.png" />
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+        <p>Accepted payment methods</p>
+        <div class="payment grid">
+          <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+          <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+          <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+        </div>
+      </div>
+  
+      <div class="box">
+        <h3>Recent News</h3>
+  
+        <ul>
+          <li>Our Secret Island Boat Tour Is Just for You</li>
+          <li>Chill and Escape in Our Natural Shelters</li>
+          <li>September in Luviana Hotel</li>
+          <li>Live Music Concerts at Luviana</li>
+        </ul>
+      </div>
+  
+      <div class="box">
+        <h3>For Customers</h3>
+        <ul>
+          <li>About Luviana</li>
+          <li>Customer Care/Help</li>
+          <li>Corporate Accounts</li>
+          <li>Financial Information</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+  
+      <div class="box">
+        <h3>Contact Us</h3>
+  
+        <ul>
+          <li>3015 Grand Ave, Cocount Grove, Merrick Way FL 123456</li>
+          <li><i class="far fa-envelope"></i>demoexample@gmail.com </li>
+          <li><i class="far fa-phone-alt"></i>123 456 7898 </li>
+          <li><i class="far fa-phone-alt"></i>123 456 7898 </li>
+          <li><i class="far fa-comments"></i>24/ 7 Customer Services </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+</body>
+</html>
